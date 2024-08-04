@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu link</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit recusandae accusantium sit autem facilis
+        inventore illo pariatur perspiciatis est laborum, quam, nihil, itaque a. Libero enim consequatur tempora sit
+        assumenda.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui esse obcaecati voluptatem modi, quia, ea
+        blanditiis omnis error debitis deserunt maiores eaque, sapiente ipsa voluptatum commodi ipsum nobis praesentium
+        aperiam?</head>
+
+
+    <div id="myDIV" style="padding: 40px;margin-top: 10px; background-color: rgb(195, 187, 187);"></div>
+
+    <script>
+        debugger
+        const para = document.createElement("a");
+        para.innerHTML = [
+            {
+                Text: 'about us',
+                link: 'https://google.com',
+            },
+            {
+                Text: 'contact us',
+                link: 'https://w3school.com',
+            },
+            {
+                Text: 'home',
+                link: 'https://soft98.ir',
+            },
+            {
+                Text: 'menu',
+                link: 'https://github.com',
+            },
+        ];
+        function newFunction() {
+            let len = para.length;
+            let example = "";
+            for (let i = 0; i < len; i++) {
+                example +=
+                    "<a style='margin:20px' href='" + para[i].Text + para[i].link + "'>" + "</a>";
+            }
+            return example;
+        }
+        document.getElementById("myDIV").;
+
+
+
+
+    </script>
+</body>
+
+</html>
